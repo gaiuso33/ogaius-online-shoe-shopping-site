@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OGaius Shoe Store</title>
     
-    <!--<link rel="stylesheet" href="csstesting.css">-->
+	
 	<style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
         .hero { text-align: center; background: url('banner.jpg') no-repeat center/cover; color: white; padding: 50px; }
@@ -22,9 +22,15 @@
         <h1>Welcome to My Shoes Online Shop</h1>
 	</header>
     <nav>
-		<button><a href="C:\Users\Ayogaius\Documents\200lv\2nd semester\csc293\html\PROJECT\PROJECT.html">Home</a></button>
-		<button><a href="C:\Users\Ayogaius\Documents\200lv\2nd semester\csc293\html\PROJECT\projectproduct.html">Products</a></button>
-		<button><a href="C:\Users\Ayogaius\Documents\200lv\2nd semester\csc293\html\PROJECT\projectcontact.html">Contact</a></button>
+		<button><a href="#Categories">Home</a></button>
+		<button><a href="#Bestselling">Bestselling shoes/a></button>
+		<button><a href="#New">New Arrivals</a></button>
+		<button><a href="#Reviews">Customer Reviews</a></button>
+		<button><a href="#Newsletter">Newsletter Signup</a></button>
+		<button><a href="#Location">Store Location</a></button>
+		<button><a href="#footer">Contact us</a></button>
+		<!--<button><a href=""></a></button>
+		<button><a href=""></a></button>-->
 	</nav>
     
 
@@ -39,7 +45,7 @@
 		</div>
 	
 		<!-- Categories Section -->
-		<div class="section">
+		<div class="section" id="Categories">
 			<h2>Shop by Category</h2>
 			<button>Men's Shoes</button>
 			<button>Women's Shoes</button>
@@ -48,7 +54,7 @@
 		</div>
 	
 		<!-- Bestsellers Section -->
-		<div class="section">
+		<div class="section" id="Bestselling">
 			<h2>🔥 Bestselling Shoes 🔥</h2>
 			<div class="product">
 				<img src="shoe1.jpg" alt="Shoe 1" width="150">
@@ -65,7 +71,7 @@
 		</div>
 	
 		<!-- New Arrivals Section -->
-		<div class="section">
+		<div class="section" id="New">
 			<h2>🆕 New Arrivals 🆕</h2>
 			<div class="product">
 				<img src="newshoe1.jpg" alt="New Shoe 1" width="150">
@@ -76,21 +82,21 @@
 		</div>
 	
 		<!-- Customer Reviews -->
-		<div class="section">
+		<div class="section" id="Reviews">
 			<h2>What Our Customers Say</h2>
 			<p>"Amazing comfort and style! - ⭐⭐⭐⭐⭐"</p>
 			<p>"Best shoes for my morning runs! - ⭐⭐⭐⭐⭐"</p>
 		</div>
 	
 		<!-- Newsletter Signup -->
-		<div class="section">
+		<div class="section" id="Newsletter">
 			<h2>📩 Subscribe for Exclusive Deals!</h2>
 			<input type="email" placeholder="Enter your email" required>
 			<button>Subscribe</button>
 		</div>
 
 		<!-- Store Location Section -->
-		<div class="section">
+		<div class="section" id="Location">
 			<h2>📍 Visit Our Store</h2>
 			<p><strong>Address:</strong> 123 Shoe Street, Fashion City, NY 10001</p>
 			<p><strong>Phone:</strong> +1 234 567 890</p>
@@ -103,36 +109,8 @@
 				width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
 			</iframe>
 		</div>
-		
-		
-		<!--signup/login
-		<section id="Hero Section">		
-			Large banner with a featured shoe, CTA (e.g., "Shop Now").
-		</section>
-		<section id="New Arrivals">		
-			Showcase the latest shoe collections.
-		</section>
-		<section id="Best Sellers">		
-			Highlight the most popular shoes.
-		</section>
-		<section id="Categories">		
-			Sections for Men’s, Women’s, Kids’ shoes, Sneakers, Formal, etc.
-		</section>
-		<section id="Deals & Discounts">		
-			Display ongoing sales or limited-time offers.
-		</section>
-		<section id="Customer Reviews">Show testimonials and ratings.</section> 
-		<section id="Newsletter Signup">Allow customers to subscribe for updates and deals.</section>
-		<section id="Brand Showcase">Show brands like Nike, Adidas, Puma, etc.</section>
-		<section id="Blog/Trends">Articles on shoe fashion trends, care tips, etc.</section>
-    </main>
+				
 
-    
-        <script>
-        function addToCart(product, price) {
-            alert(`${product} added to cart for $${price}`);
-        }
-    </script>-->
     <footer>
         <p>&copy; 2025 My Online Shop: Contact info, social media links, policies, etc.</p>
     </footer>

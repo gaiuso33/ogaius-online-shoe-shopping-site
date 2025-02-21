@@ -1,36 +1,19 @@
-<?php
-// Check if the form is submitted
+    <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and validate user inputs
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $address = htmlspecialchars(trim($_POST['address']));
-    $phone = htmlspecialchars(trim($_POST['phone']));
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    // Get the form data and sanitize it
+    $name = htmlspecialchars($_POST["name"]);
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 
-    // Validate email format
+    // Check if email is valid
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format");
+        echo "Invalid email format.";
+    } else {
+        echo "<h2>Form Submitted Successfully!</h2>";
+        echo "<p><strong>Name:</strong> $name</p>";
+        echo "<p><strong>Email:</strong> $email</p>";
     }
-
-    // Save to the database (example code)
-    $pdo = new PDO('mysql:host=localhost;dbname=shop', 'username', 'password');
-    $stmt = $pdo->prepare("INSERT INTO users (name, email, address, phone, password) VALUES (?, ?, ?, ?, ?)");
-    $stmt->execute([$name, $email, $address, $phone, $password]);
-
-    echo "User information collected and saved successfully!";
+} else {
+    echo "Invalid request.";
 }
 ?>
- 
- 
- <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
 
-    echo "Name: $name<br>";
-    echo "Email: $email<br>";
-
-    // Save data to database or handle as needed
-}
-?>
