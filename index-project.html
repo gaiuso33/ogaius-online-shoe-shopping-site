@@ -4,54 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OGaius Shoe Store</title>
-    
     <link rel="stylesheet" href="csstesting.css">
-    
+	
     <script src="script.js" defer></script>
 </head>
 <body>
-    
     <header class="header">
         <h1>Welcome to My Shoes Online Shop</h1>
 	</header>
+
     <nav>
-		<button><a href="C:\Users\Ayogaius\Documents\200lv\2nd semester\csc293\html\PROJECT\PROJECT.html">Home</a></button>
-		<button><a href="C:\Users\Ayogaius\Documents\200lv\2nd semester\csc293\html\PROJECT\projectproduct.html">Products</a></button>
-		<button><a href="C:\Users\Ayogaius\Documents\200lv\2nd semester\csc293\html\PROJECT\projectcontact.html">Contact</a></button>
+		<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\signuppage.html">Newsletter Signup</a></button>
+		<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\men'spage.html">Men's Shoes</a> </button>
+		<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\womenspage.html">Women's Shoes</a></button>
+		<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\kidspage.html">Kids' Shoes</a></button>
+		<button><a href="#Reviews">Customer Reviews</a></button>
+		<button><a href="#Location">Store Location</a></button>
+		<button><a href="#footer">Contact us</a></button>
 	</nav>
     
-
-    <!-- Main Content -->
     <main>
-		<!--signup/login-->
-		<section id="signup/login">		
-			<form action="process-form.php" method="POST">
-				  <label for="name">Full Name:</label>
-				  <input type="text" id="name" name="name" required><BR>
-				  <label for="email">Email:</label>
-				  <input type="email" id="email" name="email" required><BR>
-				  <label for="address">Address:</label>
-				  <textarea id="address" name="address" required></textarea><BR>
-				  <label for="phone">Phone Number:</label>
-				  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><BR>
-				  <label for="password">Password:</label>
-				  <input type="password" id="password" name="password" required>  <BR>
-				  <button type="submit">Submit</button>
-			</form>
-			 
-		</section>
-		
-    </main>
 
-    
-    <footer>
-        <p>&copy; 2025 My Online Shop</p>
+		
+		<div class="hero">
+			<h1>🔥 Step into Style! 🔥</h1>
+			<p>Find the perfect pair for every occasion.</p>
+			<button>Shop Now</button>
+		</div>
+	
+		
+		<div class="section" id="Categories">
+			<h2>Shop by Category</h2>
+			<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\men'spage.html">Men's Shoes</a> </button>
+			<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\womenspage.html">Women's Shoes</a></button>
+			<button><a href="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\kidspage.html">Kids' Shoes</a></button>
+		</div>
+	
+		
+		<div class="section" id="Bestselling">
+			<h2>🔥 Bestselling Shoes 🔥</h2>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\bestselling1.jpg" alt="Shoe 1" width="150">
+				<p>Running Sneakers</p>
+				<p>$59.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\bestselling2.jpg" alt="Shoe 2" width="150">
+				<p>Casual Loafers</p>
+				<p>$49.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\bestselling3.jpg" alt="Shoe 2" width="150">
+				<p>Lesuire Loafers</p>
+				<p>$39.99</p>
+				<button>Buy Now</button>
+			</div>
+		</div>
+	
+		
+		<div class="section" id="New">
+			<h2>🆕 New Arrivals 🆕</h2>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\newarrivals.jpg" alt="New Shoe 1" width="150">
+				<p>Nice Sneakers</p>
+				<p>$69.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\newarrivals2.jpg" alt="New Shoe 1" width="150">
+				<p>Adidad Sneakers</p>
+				<p>$69.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\newarrivals1.jpg" alt="New Shoe 1" width="150">
+				<p>Trendy Sneakers</p>
+				<p>$49.99</p>
+				<button>Buy Now</button>
+			</div>
+		</div>
+	
+		
+		<div class="section" id="Reviews">
+			<h2>What Our Customers Say</h2>
+			<p>"Amazing comfort and style! - ⭐⭐⭐⭐⭐"</p>
+			<p>"Shop from OGaius - ⭐⭐⭐⭐⭐"</p>
+			<p>"Every shoe i get is awesome - ⭐⭐⭐⭐⭐"</p>
+			<p>"Best shoes for my morning runs! - ⭐⭐⭐⭐⭐"</p>
+		</div>
+	
+		
+		<div class="section" id="Newsletter">
+			<h2>📩 Subscribe for Exclusive Deals!</h2>
+                <button type="submit">Subscribe</button>
+		</div>
+
+		
+		<div class="section" id="Location">
+			<h2>📍 Visit Our Store</h2>
+			<p><strong>Address:</strong> A11,Kuti hall, UI, Ibadan</p>
+			<p><strong>Phone:</strong> +2348104344584</p>
+			<p><strong>Email:</strong> oluwolegaiusayokunle@gmail.com</p>
+			<p><strong>Opening Hours:</strong> Mon - Sat: 9 AM - 9 PM | Sun: 10 AM - 6 PM</p>
+			
+			
+			<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093746!2d144.96315771531816!3d-37.81410777975181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57741b832e98964!2sShoe%20Store!5e0!3m2!1sen!2sus!4v1700000000000"
+				width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+			</iframe>
+		</div>
+				
+
+    <footer id="footer">
+        <p>&copy;		
+We have been around for more than 10 years – 
+there is a huge community behind it. 
+You can get involved by joining our Forums, 
+liking us on <a href="facebook.com">Facebook</a>,
+or follow our exploits on <a href="x.com/4charactas">Twitter.</a>
+<br>Send a message to us through <a href="oluwolegaiusayokunle@gmail.com">Gmail</a>
+<br>You can also call on 08104344584
+		T&C apply</p>
     </footer>
 
-        <script>
-        function addToCart(product, price) {
-            alert(`${product} added to cart for $${price}`);
-        }
-    </script>
 </body>
 </html>
