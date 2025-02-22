@@ -1,4 +1,4 @@
-    <?php
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form data and sanitize it
     $name = htmlspecialchars($_POST["name"]);
@@ -16,4 +16,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Invalid request.";
 }
 ?>
+
 

@@ -4,23 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OGaius Shoe Store</title>
-    
+    <link rel="stylesheet" href="csstesting.css">
 	
-	<style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .hero { text-align: center; background: url('banner.jpg') no-repeat center/cover; color: white; padding: 50px; }
-        .section { padding: 40px; text-align: center; }
-        .product { display: inline-block; margin: 10px; padding: 10px; border: 1px solid #ddd; width: 200px; }
-        .footer { background: black; color: white; text-align: center; padding: 20px; }
-        button { background: red; color: white; padding: 10px; border: none; cursor: pointer; }
-    </style>
     <script src="script.js" defer></script>
 </head>
 <body>
-    
     <header class="header">
         <h1>Welcome to My Shoes Online Shop</h1>
 	</header>
+
     <nav>
 		<button><a href="#Categories">Home</a></button>
 		<button><a href="#Bestselling">Bestselling shoes/a></button>
@@ -29,8 +21,6 @@
 		<button><a href="#Newsletter">Newsletter Signup</a></button>
 		<button><a href="#Location">Store Location</a></button>
 		<button><a href="#footer">Contact us</a></button>
-		<!--<button><a href=""></a></button>
-		<button><a href=""></a></button>-->
 	</nav>
     
 
@@ -57,15 +47,21 @@
 		<div class="section" id="Bestselling">
 			<h2>🔥 Bestselling Shoes 🔥</h2>
 			<div class="product">
-				<img src="shoe1.jpg" alt="Shoe 1" width="150">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\bestselling1.jpg" alt="Shoe 1" width="150">
 				<p>Running Sneakers</p>
 				<p>$59.99</p>
 				<button>Buy Now</button>
 			</div>
 			<div class="product">
-				<img src="shoe2.jpg" alt="Shoe 2" width="150">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\bestselling2.jpg" alt="Shoe 2" width="150">
 				<p>Casual Loafers</p>
 				<p>$49.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\bestselling3.jpg" alt="Shoe 2" width="150">
+				<p>Lesuire Loafers</p>
+				<p>$39.99</p>
 				<button>Buy Now</button>
 			</div>
 		</div>
@@ -74,9 +70,21 @@
 		<div class="section" id="New">
 			<h2>🆕 New Arrivals 🆕</h2>
 			<div class="product">
-				<img src="newshoe1.jpg" alt="New Shoe 1" width="150">
-				<p>Trendy Sneakers</p>
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\newarrivals.jpg" alt="New Shoe 1" width="150">
+				<p>Nice Sneakers</p>
 				<p>$69.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\newarrivals2.jpg" alt="New Shoe 1" width="150">
+				<p>Adidad Sneakers</p>
+				<p>$69.99</p>
+				<button>Buy Now</button>
+			</div>
+			<div class="product">
+				<img src="C:\xampp\xampp\htdocs\mywebsite\gitupdate1\shoe images\newarrivals1.jpg" alt="New Shoe 1" width="150">
+				<p>Trendy Sneakers</p>
+				<p>$49.99</p>
 				<button>Buy Now</button>
 			</div>
 		</div>
@@ -85,14 +93,15 @@
 		<div class="section" id="Reviews">
 			<h2>What Our Customers Say</h2>
 			<p>"Amazing comfort and style! - ⭐⭐⭐⭐⭐"</p>
+			<p>"Shop from OGaius - ⭐⭐⭐⭐⭐"</p>
+			<p>"Every shoe i get is awesome - ⭐⭐⭐⭐⭐"</p>
 			<p>"Best shoes for my morning runs! - ⭐⭐⭐⭐⭐"</p>
 		</div>
 	
 		<!-- Newsletter Signup -->
 		<div class="section" id="Newsletter">
 			<h2>📩 Subscribe for Exclusive Deals!</h2>
-			<input type="email" placeholder="Enter your email" required>
-			<button>Subscribe</button>
+                <button type="submit">Subscribe</button>
 		</div>
 
 		<!-- Store Location Section -->
@@ -111,7 +120,7 @@
 		</div>
 				
 
-    <footer>
+    <footer id="footer">
         <p>&copy; 2025 My Online Shop: Contact info, social media links, policies, etc.</p>
     </footer>
 
